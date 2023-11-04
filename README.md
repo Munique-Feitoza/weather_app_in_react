@@ -5,29 +5,15 @@ Is an app about meteorology. The config.js file is what my code editor app trans
 
 ## Documentação da API
 
-#### Retorna todos os itens
+#### Base
 
 ```http
-  GET /api/items
+ http://api.weatherapi.com/v1
 ```
 
 | Parâmetro   | Tipo       | Descrição                           |
 | :---------- | :--------- | :---------------------------------- |
-| `api_key` | `string` | **Obrigatório**. A chave da sua API |
-
-#### Retorna um item
-
-```http
-  GET /api/items/${id}
-```
-
-| Parâmetro   | Tipo       | Descrição                                   |
-| :---------- | :--------- | :------------------------------------------ |
-| `id`      | `string` | **Obrigatório**. O ID do item que você quer |
-
-#### add(num1, num2)
-
-Recebe dois números e retorna a sua soma.
+| `key=<SUA CHAVE DE API>` | `number` | **Obrigatório**. A chave da sua API |
 
 
 ## Funcionalidades
@@ -47,6 +33,8 @@ Recebe dois números e retorna a sua soma.
 Framework / Library | Version
 :------------------:|:-------:
 Bootstrap | 5.3.2
+React | 18.0.0
+ReactDOM | 18.0.0
 
 
 
@@ -54,3 +42,4 @@ Bootstrap | 5.3.2
 
 * [React.js](https://legacy.reactjs.org/docs/getting-started.html)
 * [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+* [Weather API](https://www.weatherapi.com/docs/)
