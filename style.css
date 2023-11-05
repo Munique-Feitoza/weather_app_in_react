@@ -1,0 +1,60 @@
+* {
+  font-family: "Roboto", sans;
+}
+.conteudoTotal {
+  height: 200vh;
+  background: linear-gradient(45deg, rgba(2,0,36,50%) 0%, rgba(40,63,181,50%) 39%, rgba(0,218,255,50%) 100%);
+}
+
+.vidro {
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.textoNavbar {
+  color: blue;
+  margin-left: 1rem;
+}
+
+h1, h6 {
+  margin: 1rem;
+  padding: 2rem 2rem 0;
+}
+
+.button {
+  margin: 1rem 3rem 2rem;
+}
+
+.input {
+  margin: 1rem 3rem;
+}
+
+.textoPesquisa {
+  padding: 0.5rem 1rem 0.5rem 0;
+}
+
+.imagemHoje {
+  padding: 1rem;
+}
+
+img {
+  padding: 0;
+  margin: auto;
+}
+
+h3 {
+  padding: 2rem 1rem;
+}
+
+h5 {
+  font-weight: 900;
+  padding: 1rem;
+}
+
+p {
+  padding: 0 1rem;
+}
