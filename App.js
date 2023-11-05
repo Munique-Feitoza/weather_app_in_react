@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 function App() {
 
-  const [city, setCity] = useState("Rio de Janeiro");
+  const [city, setCity] = useState("");
   const [weatherForecast, setWeatherForecast] = useState(null);
 
   const handleChange = (event) => {
@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="conteudoTotal">
       <nav className="navbar navbar-expand-md mb-4 vidro">
-        <a className="navbar-brand textoNavbar" href="#top"> {city} </a>
+        <a className="navbar-brand" href="#top"> Weather </a>
       </nav>
       <main className="container">
         <div className="pesquisa vidro">
@@ -68,9 +68,9 @@ function App() {
               <div className="container">
               <div className="container d-flex">
               <div className="container">
-                <div className="mt-4 d-flex align-items-center vidro">
+                <div className="mt-4 d-flex align-items-center vidro horas">
                 <div>
-                  <div className="d-flex">
+                  <div className="d-flex tempo">
                    <h3> 00:00 </h3>
                     <img src={weatherForecast.forecast.forecastday[0].hour[0].condition.icon} />
                   </div>
@@ -82,9 +82,9 @@ function App() {
                 </div>
               </div>
               <div className="container">
-                <div className="mt-4 d-flex align-items-center vidro">
+                <div className="mt-4 d-flex align-items-center vidro horas">
                   <div>
-                  <div className="d-flex">
+                  <div className="d-flex tempo">
                    <h3> 01:00 </h3>
                     <img src={weatherForecast.forecast.forecastday[0].hour[1].condition.icon} />
                   </div>
@@ -96,9 +96,9 @@ function App() {
                 </div>
               </div>
               <div className="container">
-               <div className="mt-4 d-flex align-items-center vidro">
+               <div className="mt-4 d-flex align-items-center vidro horas">
                 <div>
-                  <div className="d-flex">
+                  <div className="d-flex tempo">
                    <h3> 02:00 </h3>
                     <img src={weatherForecast.forecast.forecastday[0].hour[2].condition.icon} />
                   </div>
@@ -112,9 +112,9 @@ function App() {
                </div>
                <div className="container d-flex">
                <div className="container">
-               <div className="mt-4 d-flex align-items-center vidro">
+               <div className="mt-4 d-flex align-items-center vidro horas">
                 <div>
-                  <div className="d-flex">
+                  <div className="d-flex tempo">
                    <h3> 03:00 </h3>
                     <img src={weatherForecast.forecast.forecastday[0].hour[3].condition.icon} />
                   </div>
@@ -126,9 +126,9 @@ function App() {
                 </div>
                </div>
                 <div className="container">
-               <div className="mt-4 d-flex align-items-center vidro">
+               <div className="mt-4 d-flex align-items-center vidro horas">
                 <div>
-                  <div className="d-flex">
+                  <div className="d-flex tempo">
                    <h3> 04:00 </h3>
                     <img src={weatherForecast.forecast.forecastday[0].hour[4].condition.icon} />
                   </div>
@@ -140,9 +140,9 @@ function App() {
                 </div>
                </div>
                <div className="container">
-               <div className="mt-4 d-flex align-items-center vidro">
+               <div className="mt-4 d-flex align-items-center vidro horas">
                 <div>
-                  <div className="d-flex">
+                  <div className="d-flex tempo">
                    <h3> 05:00 </h3>
                     <img src={weatherForecast.forecast.forecastday[0].hour[5].condition.icon} />
                   </div>
@@ -156,9 +156,9 @@ function App() {
                </div>
                <div className="container d-flex">
                <div className="container">
-               <div className="mt-4 d-flex align-items-center vidro">
+               <div className="mt-4 d-flex align-items-center vidro horas">
                 <div>
-                  <div className="d-flex">
+                  <div className="d-flex tempo">
                    <h3> 06:00 </h3>
                     <img src={weatherForecast.forecast.forecastday[0].hour[6].condition.icon} />
                   </div>
@@ -170,9 +170,9 @@ function App() {
                 </div>
                </div>
                 <div className="container">
-               <div className="mt-4 d-flex align-items-center vidro">
+               <div className="mt-4 d-flex align-items-center vidro horas">
                 <div>
-                  <div className="d-flex">
+                  <div className="d-flex tempo">
                    <h3> 07:00 </h3>
                     <img src={weatherForecast.forecast.forecastday[0].hour[7].condition.icon} />
                   </div>
@@ -184,9 +184,9 @@ function App() {
                 </div>
                </div>
                <div className="container">
-               <div className="mt-4 d-flex align-items-center vidro">
+               <div className="mt-4 d-flex align-items-center vidro horas">
                 <div>
-                  <div className="d-flex">
+                  <div className="d-flex tempo">
                    <h3> 08:00 </h3>
                     <img src={weatherForecast.forecast.forecastday[0].hour[8].condition.icon} />
                   </div>
@@ -200,9 +200,9 @@ function App() {
                </div>
                <div className="container d-flex">
                <div className="container">
-               <div className="mt-4 d-flex align-items-center vidro">
+               <div className="mt-4 d-flex align-items-center vidro horas">
                 <div>
-                  <div className="d-flex">
+                  <div className="d-flex tempo">
                    <h3> 09:00 </h3>
                     <img src={weatherForecast.forecast.forecastday[0].hour[9].condition.icon} />
                   </div>
@@ -214,9 +214,9 @@ function App() {
                 </div>
                </div>
                 <div className="container">
-               <div className="mt-4 d-flex align-items-center vidro">
+               <div className="mt-4 d-flex align-items-center vidro horas">
                 <div>
-                  <div className="d-flex">
+                  <div className="d-flex tempo">
                    <h3> 10:00 </h3>
                     <img src={weatherForecast.forecast.forecastday[0].hour[10].condition.icon} />
                   </div>
@@ -228,9 +228,9 @@ function App() {
                 </div>
                </div>
                <div className="container">
-               <div className="mt-4 d-flex align-items-center vidro">
+               <div className="mt-4 d-flex align-items-center vidro horas">
                 <div>
-                  <div className="d-flex">
+                  <div className="d-flex tempo">
                    <h3> 11:00 </h3>
                     <img src={weatherForecast.forecast.forecastday[0].hour[11].condition.icon} />
                   </div>
@@ -244,9 +244,9 @@ function App() {
                </div>
                <div className="container d-flex">
               <div className="container">
-                <div className="mt-4 d-flex align-items-center vidro">
+                <div className="mt-4 d-flex align-items-center vidro horas">
                   <div>
-                  <div className="d-flex">
+                  <div className="d-flex tempo">
                    <h3> 12:00 </h3>
                     <img src={weatherForecast.forecast.forecastday[0].hour[12].condition.icon} />
                   </div>
@@ -258,9 +258,9 @@ function App() {
                 </div>
               </div>
               <div className="container">
-                <div className="mt-4 d-flex align-items-center vidro">
+                <div className="mt-4 d-flex align-items-center vidro horas">
                   <div>
-                  <div className="d-flex">
+                  <div className="d-flex tempo">
                    <h3> 13:00 </h3>
                     <img src={weatherForecast.forecast.forecastday[0].hour[13].condition.icon} />
                   </div>
@@ -272,9 +272,9 @@ function App() {
                 </div>
               </div>
               <div className="container">
-               <div className="mt-4 d-flex align-items-center vidro">
+               <div className="mt-4 d-flex align-items-center vidro horas">
                 <div>
-                  <div className="d-flex">
+                  <div className="d-flex tempo">
                    <h3> 14:00 </h3>
                     <img src={weatherForecast.forecast.forecastday[0].hour[14].condition.icon} />
                   </div>
@@ -288,9 +288,9 @@ function App() {
                </div>
                <div className="container d-flex">
                <div className="container">
-               <div className="mt-4 d-flex align-items-center vidro">
+               <div className="mt-4 d-flex align-items-center vidro horas">
                 <div>
-                  <div className="d-flex">
+                  <div className="d-flex tempo">
                    <h3> 15:00 </h3>
                     <img src={weatherForecast.forecast.forecastday[0].hour[15].condition.icon} />
                   </div>
@@ -302,9 +302,9 @@ function App() {
                 </div>
                </div>
                 <div className="container">
-               <div className="mt-4 d-flex align-items-center vidro">
+               <div className="mt-4 d-flex align-items-center vidro horas">
                 <div>
-                  <div className="d-flex">
+                  <div className="d-flex tempo">
                    <h3> 16:00 </h3>
                     <img src={weatherForecast.forecast.forecastday[0].hour[16].condition.icon} />
                   </div>
@@ -316,9 +316,9 @@ function App() {
                 </div>
                </div>
                <div className="container">
-               <div className="mt-4 d-flex align-items-center vidro">
+               <div className="mt-4 d-flex align-items-center vidro horas">
                 <div>
-                  <div className="d-flex">
+                  <div className="d-flex tempo">
                    <h3> 17:00 </h3>
                     <img src={weatherForecast.forecast.forecastday[0].hour[17].condition.icon} />
                   </div>
@@ -332,9 +332,9 @@ function App() {
                </div>
                <div className="container d-flex">
                <div className="container">
-               <div className="mt-4 d-flex align-items-center vidro">
+               <div className="mt-4 d-flex align-items-center vidro horas">
                 <div>
-                  <div className="d-flex">
+                  <div className="d-flex tempo">
                    <h3> 18:00 </h3>
                     <img src={weatherForecast.forecast.forecastday[0].hour[18].condition.icon} />
                   </div>
@@ -346,9 +346,9 @@ function App() {
                 </div>
                </div>
                 <div className="container">
-               <div className="mt-4 d-flex align-items-center vidro">
+               <div className="mt-4 d-flex align-items-center vidro horas">
                 <div>
-                  <div className="d-flex">
+                  <div className="d-flex tempo">
                    <h3> 19:00 </h3>
                     <img src={weatherForecast.forecast.forecastday[0].hour[19].condition.icon} />
                   </div>
@@ -360,9 +360,9 @@ function App() {
                 </div>
                </div>
                <div className="container">
-               <div className="mt-4 d-flex align-items-center vidro">
+               <div className="mt-4 d-flex align-items-center vidro horas">
                 <div>
-                  <div className="d-flex">
+                  <div className="d-flex tempo">
                    <h3> 20:00 </h3>
                     <img src={weatherForecast.forecast.forecastday[0].hour[20].condition.icon} />
                   </div>
@@ -376,9 +376,9 @@ function App() {
                </div>
                <div className="container d-flex">
                <div className="container">
-               <div className="mt-4 d-flex align-items-center vidro">
+               <div className="mt-4 d-flex align-items-center vidro horas">
                 <div>
-                  <div className="d-flex">
+                  <div className="d-flex tempo">
                    <h3> 21:00 </h3>
                     <img src={weatherForecast.forecast.forecastday[0].hour[21].condition.icon} />
                   </div>
@@ -390,9 +390,9 @@ function App() {
                 </div>
                </div>
                 <div className="container">
-               <div className="mt-4 d-flex align-items-center vidro ">
+               <div className="mt-4 d-flex align-items-center vidro horas">
                 <div>
-                  <div className="d-flex">
+                  <div className="d-flex tempo">
                    <h3> 22:00 </h3>
                     <img src={weatherForecast.forecast.forecastday[0].hour[22].condition.icon} />
                   </div>
@@ -404,9 +404,9 @@ function App() {
                 </div>
                </div>
                <div className="container">
-               <div className="mt-4 d-flex align-items-center vidro">
+               <div className="mt-4 d-flex align-items-center vidro horas">
                 <div>
-                  <div className="d-flex">
+                  <div className="d-flex tempo">
                    <h3> 23:00 </h3>
                     <img src={weatherForecast.forecast.forecastday[0].hour[23].condition.icon} />
                   </div>
