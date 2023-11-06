@@ -18,7 +18,8 @@ Is an app about meteorology in Brazilian Portuguese. The config.js file is what 
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Screenshot_2023-11-06-13-56-23-831_io spck](https://github.com/Munique-Feitoza/weather_app_in_react_js/assets/140446097/9106e9b3-e598-42ac-bc71-e05d1e0a0d59)
+
 
 ## Programming in
 
