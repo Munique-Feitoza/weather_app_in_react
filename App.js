@@ -18,11 +18,10 @@ function App() {
       })
       .then((data) => {
         setWeatherForecast(data);
-      })
-  }
+      });
+  };
 
   useEffect(() => {
-    // Carregar a previsão do tempo ao iniciar a página e sempre que a cidade mudar
     if (city) {
       handleSearch();
     }
@@ -36,7 +35,7 @@ function App() {
             <div>
               <div className="d-flex tempo">
                 <h3>{`${index.toString().padStart(2, '0')}:00`}</h3>
-                <img src={hour.condition.icon} />
+                <img src={hour.condition.icon} alt="Weather icon" />
               </div>
               <h5>{hour.condition.text}</h5>
               <p>Temperatura: {hour.temp_c}°C</p>
@@ -58,7 +57,7 @@ function App() {
       <main className="container">
         <div className="pesquisa vidro">
           <h1>Verifique a previsão do tempo da sua cidade</h1>
-          <h6 className="lead">Digite sua cidade e pesquise</h6>
+          <h6 className="lead">Digite o nome da sua cidade</h6>
 
           <div className="row mb-2">
             <div className="col-md-8">
@@ -69,17 +68,26 @@ function App() {
               />
             </div>
           </div>
-
-          <button
-            onClick={handleSearch}
-            className="btn btn-primary btn-lg button"
-          >
-            Pesquisar
-          </button>
         </div>
       </main>
-
-      {renderHourlyForecast()}
+      {
+        weatherForecast && (
+          <div>
+            <div className="container">
+              <div className="mt-4 d-flex align-items-center vidro">
+                <div>
+                  <img className="imagemHoje" src={weatherForecast.current.condition.icon} alt="Current weather icon" />
+                </div>
+                <div className="textoPesquisa">
+                  <h3>Agora está: {weatherForecast.current.condition.text} </h3>
+                  <p className="lead"> Temperatura: {weatherForecast.current.temp_c}°C </p>
+                </div>
+              </div>
+            </div>
+            {renderHourlyForecast()}
+          </div>
+        )
+      }
     </div>
   );
 }
