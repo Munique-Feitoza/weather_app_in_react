@@ -30,8 +30,8 @@ function App() {
   const renderHourlyForecast = () => {
     if (weatherForecast) {
       return weatherForecast.forecast.forecastday[0].hour.map((hour, index) => (
-        <div key={index} className="container">
-          <div className="mt-4 d-flex align-items-center vidro horas">
+        <div key={index} className="row horasTamanho">
+          <div className="col mt-4 d-flex align-items-center vidro horas">
             <div>
               <div className="d-flex tempo">
                 <h3>{`${index.toString().padStart(2, '0')}:00`}</h3>
@@ -84,7 +84,9 @@ function App() {
                 </div>
               </div>
             </div>
+            <div className="container horasContainer">
             {renderHourlyForecast()}
+            </div>
           </div>
         )
       }
