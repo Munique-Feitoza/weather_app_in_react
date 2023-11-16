@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 
 function App() {
-  const [city, setCity] = useState("");
+  const [city, setCity] = useState("Rio de janeiro");
   const [weatherForecast, setWeatherForecast] = useState(null);
 
   const handleChange = (event) => {
@@ -30,14 +30,14 @@ function App() {
   const renderHourlyForecast = () => {
     if (weatherForecast) {
       return weatherForecast.forecast.forecastday[0].hour.map((hour, index) => (
-        <div key={index} className="row horasTamanho">
-          <div className="col mt-4 d-flex align-items-center vidro horas">
-            <div>
-              <div className="d-flex tempo">
+        <div key={index} className="row">
+          <div className="col mt-4 align-items-center vidro horas">
+            <div className="tempo-definicao">
+              <div className="d-flex align-items-center tempo">
                 <h3>{`${index.toString().padStart(2, '0')}:00`}</h3>
+                <h4>{hour.condition.text}</h4>
                 <img src={hour.condition.icon} alt="Weather icon" />
               </div>
-              <h5>{hour.condition.text}</h5>
               <p>Temperatura: {hour.temp_c}°C</p>
               <p>Sensação: {hour.feelslike_c}°C</p>
               <p>Chuva: {hour.chance_of_rain}%</p>
@@ -84,7 +84,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="container horasContainer">
+            <div className="container">
             {renderHourlyForecast()}
             </div>
           </div>
