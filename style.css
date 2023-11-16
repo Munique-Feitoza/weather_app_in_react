@@ -15,14 +15,6 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.horasTamanho {
-  width: 25%;
-}
-
-.horasContainer {
-  display: flex;
-}
-
 a {
   color: blue;
   margin-left: 2rem;
@@ -33,12 +25,8 @@ h1, h6 {
   padding: 2rem 2rem 0;
 }
 
-.button {
-  margin: 1rem 3rem 2rem;
-}
-
 .input {
-  margin: 1rem 3rem;
+  margin: 1rem 3rem 2rem;
 }
 
 .textoPesquisa {
@@ -46,12 +34,14 @@ h1, h6 {
 }
 
 .imagemHoje {
-  padding: 1rem;
+  padding: 1rem 5rem 1rem 1rem;
+  width: 140%;
 }
 
 img {
+  width: 15%;
   padding: 0;
-  margin: auto;
+  margin: auto 1rem auto auto;
 }
 
 .tempo {
@@ -59,16 +49,21 @@ img {
 }
 
 h3 {
-  padding: 2rem 1rem;
+  margin: 2rem auto 2rem 1rem;
 }
 
-h5 {
+h4 {
   font-weight: 900;
-  padding: 1rem
+  margin: 2rem auto;
 }
 
 p {
   padding: 0 0.5rem;
+}
+
+.tempo-definicao > p {
+  margin: 1rem auto;
+  text-align: center;
 }
 
 .horas {
