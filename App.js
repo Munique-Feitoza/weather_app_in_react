@@ -60,13 +60,14 @@ function App() {
           <h6 className="lead">Digite o nome da sua cidade</h6>
 
           <div className="row mb-2">
-            <div className="col-md-8">
+            <div className="col-md-10">
               <input
                 onChange={handleChange}
                 className="form-control input"
                 value={city}
               />
             </div>
+            <button className="btn col-md-10 btn-primary" onClick={handleSearch}>Click</button>
           </div>
         </div>
       </main>
