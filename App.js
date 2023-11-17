@@ -65,7 +65,7 @@ function App() {
   };
 
   return (
-    <div className="conteudoTotal">
+    <div>
       <nav className="navbar navbar-expand-md mb-4 vidro">
         <a className="navbar-brand" href="#top"> Weather </a>
       </nav>
