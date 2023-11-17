@@ -19,8 +19,17 @@ body {
 }
 
 .definicao {
-  margin: auto;
+  margin: 2rem auto;
   text-align: center;
+}
+
+.container-principal {
+  margin-bottom: 3rem;
+}
+
+.tempo-definicao > hr {
+  border: 2px solid #000;
+  border-radius: 1rem;
 }
 
 a {
@@ -57,7 +66,7 @@ img {
 }
 
 h3 {
-  margin: 2rem auto 2rem 1rem;
+  margin: 2rem auto auto 1rem;
 }
 
 h4 {
