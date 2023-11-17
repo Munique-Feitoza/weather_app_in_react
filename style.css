@@ -1,9 +1,12 @@
 * {
   font-family: "Roboto", sans;
 }
-.conteudoTotal {
-  height: 400vh;
-  background: linear-gradient(320deg, rgba(2, 0, 36, 100%) 0%, rgba(2, 0, 36, 80%) 20%, rgba(40, 63, 181, 50%) 50%, rgba(0, 218, 255, 50%) 80%, rgba(0, 218, 255, 1%) 100%);
+body {
+  background: url("images/mapa.jpg") center center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .vidro {
