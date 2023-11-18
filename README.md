@@ -26,7 +26,7 @@ Is an app about meteorology in Brazilian Portuguese. The config.js file is what 
 ## Programming in
 
 * **JavaScript**
-* **React.js**
+* **React**
 * **CSS**
 * **HTML**
 
