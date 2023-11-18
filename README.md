@@ -1,6 +1,6 @@
-# Weather app in React.js
+# Weather app in React
 
-Is an app about meteorology in Brazilian Portuguese. The config.js file is what my code editor app transforms into ReactJS, the file isn't poorly organized, it's just that my app doesn't work if they're in a folder, I honestly don't know how to explain why this happened, but in a "lan house" I can't download ReactJS, until I find someone place that can do the download I'll produce it this way.
+Is an app about meteorology in Brazilian Portuguese. The config.js file is what my code editor app transforms into React, the file isn't poorly organized, it's just that my app doesn't work if they're in a folder, I honestly don't know how to explain why this happened, but in a "lan house" I can't download React, until I find someone place that can do the download I'll produce it this way.
 
 
 ## API documentation
@@ -18,9 +18,9 @@ Is an app about meteorology in Brazilian Portuguese. The config.js file is what 
 
 ## Screenshots
 
-[GitHub page](https://munique-feitoza.github.io/weather_app_in_react_js/)
+[GitHub page](https://munique-feitoza.github.io/weather_app_in_react/)
 
-> Working
+> In progress
 
 
 ## Programming in
@@ -33,12 +33,12 @@ Is an app about meteorology in Brazilian Portuguese. The config.js file is what 
 Framework / Library | Version
 :------------------:|:-------:
 Bootstrap | 5.3.2
-React | 18.0.0
+React | 16.14.0
 ReactDOM | 18.0.0
 
 
 ## Documentation 
 
-* [React js](https://legacy.reactjs.org/docs/getting-started.html)
+* [React](https://react.dev/)
 * [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 * [Weather API](https://www.weatherapi.com/docs/)
