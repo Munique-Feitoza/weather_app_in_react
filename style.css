@@ -18,6 +18,10 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+.pesquisa {
+  margin-bottom: 2rem;
+}
+
 .definicao {
   margin: 2rem auto;
   text-align: center;
@@ -27,7 +31,7 @@ body {
   margin-bottom: 3rem;
 }
 
-.tempo-definicao > hr {
+.tempo-definicao > hr, .vidro > hr {
   border: 2px solid #000;
   border-radius: 1rem;
 }
