@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 
 function App() {
-  const [city, setCity] = useState("");
+  const [city, setCity] = useState("rio de janeiro");
   const [weatherForecast, setWeatherForecast] = useState(null);
 
   const handleChange = (event) => {
@@ -89,8 +89,8 @@ function App() {
       {
         weatherForecast && (
           <div className="container-principal">
-            <div className="container">
-              <div className="mt-4 d-flex align-items-center vidro">
+            <div className="container vidro">
+              <div className="mt-4 d-flex align-items-center">
                 <div>
                   <img className="imagemHoje" src={weatherForecast.current.condition.icon} alt="Current weather icon" />
                 </div>
@@ -98,6 +98,10 @@ function App() {
                   <h3>Agora está: {weatherForecast.current.condition.text} </h3>
                   <p className="lead"> Temperatura: {weatherForecast.current.temp_c}°C </p>
                 </div>
+              </div>
+              <hr/>
+              <div>
+              //detalhes a adicionar
               </div>
             </div>
             <div className="container">
