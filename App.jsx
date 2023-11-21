@@ -101,7 +101,9 @@ function App() {
               </div>
               <hr/>
               <div>
-              //detalhes a adicionar
+              <p>Lua: {weatherForecast.forecast.forecastday[0].astro.moon_phase}</p>
+              <p>Nascer do sol: {weatherForecast.forecast.forecastday[0].astro.sunrise}</p>
+              <p>Pôr do sol: {weatherForecast.forecast.forecastday[0].astro.sunset}</p>
               </div>
             </div>
             <div className="container">
