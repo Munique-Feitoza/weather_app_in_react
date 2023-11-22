@@ -103,8 +103,8 @@ function App() {
               <div className="d-flex">
                 <div className="definicao">
                   <p>Temperatura máxima: {weatherForecast.forecast.forecastday[0].day.maxtemp_c}°C</p>
-                  <p>Temperatura mínima: {weatherForecast.forecast.forecastday[0].day.mintemp_c}°C</p>
                   <p>Temperatura média: {weatherForecast.forecast.forecastday[0].day.avgtemp_c}°C</p>
+                  <p>Temperatura mínima: {weatherForecast.forecast.forecastday[0].day.mintemp_c}°C</p>
                 </div>
                 <div className="definicao">
                   <p>Lua: {weatherForecast.forecast.forecastday[0].astro.moon_phase}</p>
