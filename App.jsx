@@ -100,10 +100,17 @@ function App() {
                 </div>
               </div>
               <hr/>
-              <div>
-              <p>Lua: {weatherForecast.forecast.forecastday[0].astro.moon_phase}</p>
-              <p>Nascer do sol: {weatherForecast.forecast.forecastday[0].astro.sunrise}</p>
-              <p>Pôr do sol: {weatherForecast.forecast.forecastday[0].astro.sunset}</p>
+              <div className="d-flex">
+                <div className="definicao">
+                  <p>Temperatura máxima: {weatherForecast.forecast.forecastday[0].day.maxtemp_c}°C</p>
+                  <p>Temperatura mínima: {weatherForecast.forecast.forecastday[0].day.mintemp_c}°C</p>
+                  <p>Temperatura média: {weatherForecast.forecast.forecastday[0].day.avgtemp_c}°C</p>
+                </div>
+                <div className="definicao">
+                  <p>Lua: {weatherForecast.forecast.forecastday[0].astro.moon_phase}</p>
+                  <p>Nascer do sol: {weatherForecast.forecast.forecastday[0].astro.sunrise}</p>
+                  <p>Pôr do sol: {weatherForecast.forecast.forecastday[0].astro.sunset}</p>
+                </div>
               </div>
             </div>
             <div className="container">
