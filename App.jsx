@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 
 function App() {
-  const [city, setCity] = useState("rio de janeiro");
+  const [city, setCity] = useState("");
   const [weatherForecast, setWeatherForecast] = useState(null);
 
   const handleChange = (event) => {
@@ -82,7 +82,6 @@ function App() {
                 value={city}
               />
             </div>
-            <button className="btn col-md-10 btn-primary" onClick={handleSearch}>Click</button>
           </div>
         </div>
       </main>
