@@ -20,7 +20,7 @@ Is an app about meteorology in Brazilian Portuguese. The config.js file is what 
 
 [GitHub page](https://munique-feitoza.github.io/weather_app_in_react/)
 
-> In progress
+![Screenshot_2023-11-28-15-45-10-506_io spck](https://github.com/Munique-Feitoza/weather_app_in_react/assets/140446097/7c3d39fa-7ec3-486a-8c06-e4ea1dff4fb2)
 
 
 ## Programming in
