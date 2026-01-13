@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./images/mapa.jpg") center center no-repeat fixed;
+  background-size: cover;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Glassmorphism Effect */
+.vidro {
+  background: rgba(255, 255, 255, 0.35);
+  /* Slightly more opaque for readability */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.vidro:hover {
+  box-shadow: 0 10px 40px 0 rgba(31, 38, 135, 0.45);
+}
+
+/* Navbar */
+.navbar {
+  padding: 1rem 2rem;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #000 !important;
+}
+
+/* Container Spacing */
+.container {
+  max-width: 900px;
+}
+
+.pesquisa {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.pesquisa h1 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.pesquisa h6 {
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+/* Inputs & Buttons */
+.input {
+  border-radius: 20px;
+  border: none;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  border-radius: 20px;
+  padding: 10px 25px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* Weather Display */
+.container-principal {
+  margin-bottom: 3rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.imagemHoje {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.textoPesquisa h3 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.definicao {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+.definicao p {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+hr {
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  margin: 1.5rem 0;
+}
+
+/* Hourly Forecast */
+.horas {
+  margin-bottom: 1rem;
+}
+
+.tempo {
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.tempo h3 {
+  font-size: 1.2rem;
+}
+
+.tempo h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.tempo img {
+  width: 50px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .d-flex {
+    flex-direction: column;
+  }
+
+  .textoPesquisa {
+    text-align: center;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+}
