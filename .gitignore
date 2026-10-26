@@ -5,6 +5,11 @@
 /.pnp
 .pnp.js
 
+# Local environment files — never commit API keys
+.env
+.env.*
+!.env.example
+
 # testing
 /coverage
 

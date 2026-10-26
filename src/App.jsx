@@ -14,7 +14,10 @@ function App() {
     setWeatherForecast(null);
 
     const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
-    // Fallback if env not set (for safety in this demo, though should be in env)
+    if (!apiKey) {
+      setWeatherForecast(null);
+      return;
+    }
     const key = apiKey;
 
     fetch(`http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${searchCity}&lang=pt`)
